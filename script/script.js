@@ -1,4 +1,4 @@
-const SERVER = 'http://localhost:3000';
+const SERVER = 'https://resumamesta.onrender.com';
 
 const seccionReciente = document.getElementById('seccionReciente');
 const seccionSugeridos = document.getElementById('seccionSugeridos');
