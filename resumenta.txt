@@ -1,0 +1,5 @@
+que en la pagina principal salga solo la miniatura del video
+
+1. transición de la miniatura a la de los videos como Netflix
+
+a medida que uno valla bajando que la cosas aparezxcan e manera progresiva y aumentando ek tamaño

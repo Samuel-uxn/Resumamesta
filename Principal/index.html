@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumamesta</title>
+</head>
+<body>
+
+    <header>
+        <img src="/imagenes/banner2.png" alt="Banner del canal">
+    </header>
+
+    <div id="busqueda">
+        <input type="text" id="inputBusqueda" placeholder="Buscar video...">
+    </div>
+
+    <h2 class="titulo-seccion"></h2>
+    <div id="seccionReciente" class="reciente"></div>
+
+    <h2 class="titulo-seccion"></h2>
+    <div id="seccionSugeridos" class="sugeridos"></div>
+
+    <h2 class="titulo-seccion"></h2>
+    <div id="seccionPlaylists" class="play-list"></div>
+
+    <h2 id="tituloPlaylistSeleccionada" class="titulo-seccion"></h2>
+    <div id="seccionPlaylistSeleccionada" class="sugeridos"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <iframe id="modalVideo" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>@Resumamesta</footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

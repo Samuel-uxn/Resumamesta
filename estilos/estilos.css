@@ -1,0 +1,177 @@
+#busqueda{
+    display:flex;
+    background-color:;
+    justify-content: center;
+}
+.descripcion{
+    margin: 10%;
+    flex-direction: column;
+    background-color: ;
+}
+.detalles{
+    background-color: rgb(130, 144, 217);
+    padding: 10px;
+    border-radius: 15px;
+}
+footer{
+    background-color:#3c5285;
+    padding: 30px;
+    color: white;
+}
+html, body{
+    margin: 0;
+    background-color: 	#44475a;
+    display: block;
+}
+header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header img{
+    width: 100%;
+    display: block;
+}
+input{
+    
+    flex-wrap: wrap;   
+    margin: 2%;
+    padding: 1%;
+    width: 70%;
+    background-color:;
+    border-radius: 20px;
+}
+.lista{
+    display:block;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;/*n*/
+    background-color: #678bc2;
+
+}
+.play-list{
+    display: flex;
+    gap: 25px;
+    margin: 5%;
+    background-color: ;
+    justify-content: center;
+    flex-wrap: wrap; 
+
+}
+.reciente{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10%;
+    padding: 3%;
+    text-align: center;
+    background:linear-gradient(to right, #343139, #42405a);
+    
+   border-radius: 10px;
+}
+.reciente:hover{
+    transition: 0.5s;
+    filter: brightness(90%);
+    border-radius: 17px; 
+}
+.reciente img{
+    width: 100%;
+    border-radius: 10px;
+}
+.reciente p{
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+
+    margin: 0;
+    max-width: 58%;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 700;
+
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.8),
+        0 4px 8px rgba(0,0,0,0.6);
+}
+.reciente::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        transparent
+    );
+
+    border-radius: 0 0 10px 10px;
+}
+.sugeridos{
+    display: flex;
+    gap: 4%;
+    overflow-x: auto;
+    margin: 5%;
+    scrollbar-width: none;
+}
+.sugeridos::-webkit-scrollbar{
+    display: none;
+}
+.recomendado{
+    display: block;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 4%;
+    background-color: #6272a4;
+    transition: 0.3s;
+
+}
+.recomendado:hover{
+    transform:scale(1.02);
+    filter: brightness(85%);
+    border-radius: 40px;
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+}
+
+.modal-contenido iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}

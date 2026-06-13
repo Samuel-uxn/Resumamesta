@@ -1,0 +1,30 @@
+body{
+    background-color: #282832;
+    margin: 0;
+    display: block;
+}
+.contenedor{
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    display: block;
+    width: 60%;
+    background-color: rgb(118, 120, 152);
+    justify-content: center;
+    padding: 5%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.contenedor:hover{
+    box-shadow: 0px 0px 20px 0.5px rgb(188, 126, 173);
+    transform:scale(1.05);
+}
+.contenido{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+img{
+    display: block;
+    width: 30%;
+}
